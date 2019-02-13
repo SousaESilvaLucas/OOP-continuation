@@ -13,21 +13,20 @@ public class Worker {
 	private WorkerLevel level;
 	private Double baseSalary;
 	private Department department;
-	private List<HourContract> contracts = new ArrayList<>();
+	private List<HourContract> contracts  = new ArrayList<>();
 	
 	/* Constructors */
 	
 	public Worker() {
 		
 	}
-	public Worker(String name, WorkerLevel level, Double baseSalary, Department department,
-			List<HourContract> contracts) {
+	public Worker(String name, WorkerLevel level, Double baseSalary,
+			Department department){
 		
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
 		this.department = department;
-		this.contracts = contracts;
 	}
 	
 	/* Getters and Setters */
